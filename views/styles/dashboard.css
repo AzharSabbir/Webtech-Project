@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #283e51; /* Header background color */
+    color: white; /* Header text color */
+    padding: 15px 0; /* Padding for header */
+    text-align: center; /* Center header text */
+}
+
+section {
+    margin-left: 250px; /* Space for sidebar */
+    padding: 20px; /* Padding around section */
+}
+
+/* Sidebar Styles */
+nav {
+    height: 100%; /* Full height */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    background-color: #333; /* Dark background */
+    padding-top: 20px; /* Padding for sidebar */
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+nav h2 {
+    color: white; /* Sidebar heading color */
+    text-align: center; /* Center heading */
+    margin-bottom: 20px; /* Margin below heading */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+}
+
+nav ul li {
+    padding: 12px 0; /* Space for items */
+    text-align: center; /* Center text */
+}
+
+nav ul li a {
+    text-decoration: none; /* No underline */
+    color: white; /* Link color */
+    display: block; /* Full clickable area */
+    padding: 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Light hover effect */
+}
+
+/* Cart Icon Styles */
+#cartIcon {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    font-size: 24px; /* Icon size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Cart Modal Styles */
+#cartModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Above other elements */
+    left: 0; /* Align to left */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+    overflow: auto; /* Scroll if needed */
+}
+
+/* Cart Modal Content */
+#cartModalContent {
+    background-color: white; /* Modal background */
+    margin: 100px auto; /* Center modal */
+    padding: 20px; /* Padding inside modal */
+    width: 400px; /* Modal width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Enrollment Form Modal Styles */
+#enrollmentFormModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Above other elements */
+    left: 0; /* Align to left */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay */
+    overflow: auto; /* Scroll if needed */
+}
+
+/* Enrollment Form Modal Content */
+#enrollmentFormModal > div {
+    background-color: white; /* Modal background */
+    margin: 100px auto; /* Center modal */
+    padding: 20px; /* Padding inside modal */
+    width: 400px; /* Modal width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Course Styles */
+.course-container {
+    display: flex; /* Flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space between cards */
+    margin: 20px; /* Margin around the course container */
+}
+
+.course-card {
+    border: 1px solid #ccc; /* Card border */
+    padding: 15px; /* Card padding */
+    margin: 10px; /* Margin around cards */
+    width: 300px; /* Card width */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+}
+
+/* Button Styles */
+.enroll-btn,
+.cart-btn {
+    background-color: #4CAF50; /* Button background */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding for buttons */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Space above buttons */
+    width: 100%; /* Full width */
+}
+
+.cart-btn {
+    background-color: #ff9800; /* Cart button color */
+}
+
+.enroll-btn:hover,
+.cart-btn:hover {
+    background-color: #45a049; /* Hover effect */
+}
+
+/* Form Styles */
+label {
+    display: block; /* Block elements */
+    margin-top: 10px; /* Space above labels */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding inside inputs */
+    margin-top: 5px; /* Space above inputs */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="submit"],
+button {
+    margin-top: 15px; /* Space above buttons */
+    padding: 10px; /* Padding for buttons */
+    width: 100%; /* Full width */
+}
+
+#notificationIcon {
+    cursor: pointer;
+    position: relative;
+}
+
+#notificationCount {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Hide the notification modal by default */
+#notificationModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+#notificationModalContent {
+    background-color: white; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px; /* Padding */
+    border: 1px solid #888; /* Grey border */
+    width: 80%; /* Width of the modal */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding above and below */
+    background-color: #283e51; /* Footer background color */
+    color: white; /* Footer text color */
+    position: relative; /* Position relative for proper stacking */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above footer */
+}
